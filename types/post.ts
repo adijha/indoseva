@@ -3,6 +3,7 @@ export interface IPost {
 	date: string
 	thumbnail: string
 	title: string
+	category: string
 	description: string
 	prerequisites: string[]
 	stacks: string[]
