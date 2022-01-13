@@ -1,6 +1,10 @@
 {
   "name": "indoseva",
   "private": true,
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "engineStrict": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
