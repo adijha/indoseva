@@ -7,10 +7,18 @@ const Header: React.FC = () => {
 		<header className="text-gray-600 body-font">
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-					<a className="mr-5 hover:text-gray-900">First Link</a>
-					<a className="mr-5 hover:text-gray-900">Second Link</a>
-					<a className="mr-5 hover:text-gray-900">Third Link</a>
-					<a className="hover:text-gray-900">Fourth Link</a>
+					<Link href="/tech">
+						<a className="mr-5 hover:text-gray-900">Tech</a>
+					</Link>
+					<Link href="/finance">
+						<a className="mr-5 hover:text-gray-900">Finance</a>
+					</Link>
+					<Link href="/about">
+						<a className="mr-5 hover:text-gray-900">About</a>
+					</Link>
+					<Link href="/portfolio">
+						<a className="hover:text-gray-900">Portfolio</a>
+					</Link>
 				</nav>
 				<a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
 					<svg
@@ -25,11 +33,20 @@ const Header: React.FC = () => {
 					>
 						<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
 					</svg>
-					<span className="ml-3 text-xl">Tailblocks</span>
+					{/* <Link href="/">
+						<a className="ml-3 text-xl  text-2xl font-bold text-green-500">
+							<u>Indo</u>Seva
+						</a>
+					</Link> */}
+					<Link href="/">
+						<a>
+							<span className="ml-3 text-xl">IndoSeva</span>
+						</a>
+					</Link>
 				</a>
 				<div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
 					<button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-						Button
+						Connect
 						<svg
 							fill="none"
 							stroke="currentColor"
