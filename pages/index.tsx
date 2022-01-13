@@ -1,13 +1,7 @@
-import type { NextPage, GetStaticProps } from 'next'
+import type { NextPage } from 'next'
+import Image from 'next/image'
 
-import Link from 'next/link'
-
-// props type
-type Props = {
-	posts: String
-}
-
-const Home: NextPage<Props> = ({ posts }: Props) => {
+const Home: NextPage = () => {
 	return (
 		<div>
 			<section className="text-gray-600 body-font">
@@ -34,10 +28,12 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 						</div>
 					</div>
 					<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-						<img
+						<Image
 							className="object-cover object-center rounded"
-							alt="hero"
+							height={600}
+							width={700}
 							src="https://dummyimage.com/720x600"
+							alt="Thumbnail cover image"
 						/>
 					</div>
 				</div>
@@ -63,10 +59,12 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 					<div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<img
-									alt="content"
+								<Image
 									className="object-cover object-center h-full w-full"
+									height={503}
+									width={1203}
 									src="https://dummyimage.com/1203x503"
+									alt={`Thumbnail cover image`}
 								/>
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
@@ -94,10 +92,12 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 						</div>
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<img
-									alt="content"
+								<Image
 									className="object-cover object-center h-full w-full"
+									height={504}
+									width={1204}
 									src="https://dummyimage.com/1204x504"
+									alt={`Thumbnail cover image`}
 								/>
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
@@ -125,10 +125,12 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 						</div>
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<img
-									alt="content"
+								<Image
 									className="object-cover object-center h-full w-full"
+									height={505}
+									width={1205}
 									src="https://dummyimage.com/1205x505"
+									alt={`Thumbnail cover image`}
 								/>
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
@@ -167,7 +169,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
 						<p className="lg:w-2/3 mx-auto leading-relaxed text-base">
 							Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
 							gentrify, subway tile poke farm-to-table. Franzen you probably
-							haven't heard of them man bun deep.
+							haven&apos;t heard of them man bun deep.
 						</p>
 					</div>
 					<div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
