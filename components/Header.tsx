@@ -13,12 +13,12 @@ const Header: React.FC = () => {
 					<Link href="/finance">
 						<a className="mr-5 hover:text-gray-900">Finance</a>
 					</Link>
-					<Link href="/about">
+					{/* <Link href="/about">
 						<a className="mr-5 hover:text-gray-900">About</a>
-					</Link>
-					<Link href="/portfolio">
-						<a className="hover:text-gray-900">Portfolio</a>
-					</Link>
+					</Link> */}
+					{/* <Link href="/services">
+						<a className="hover:text-gray-900">Services</a>
+					</Link> */}
 				</nav>
 				<a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
 					<svg
@@ -64,22 +64,6 @@ const Header: React.FC = () => {
 			<hr />
 		</header>
 	)
-	// return (
-	// 	// header value
-	// 	<header className="py-2">
-	// 		<Link href="/">
-	// 			<a className="text-2xl font-bold text-green-500">
-	// 				<u>Indo</u>Seva
-	// 			</a>
-	// 		</Link>
-	// 		<Link href="/blog">
-	// 			<a className="text-2xl font-bold text-green-500 ml-10">tech</a>
-	// 		</Link>
-	// 		<Link href="/blog">
-	// 			<a className="text-2xl font-bold text-green-500 ml-10">finance</a>
-	// 		</Link>
-	// 	</header>
-	// )
 }
 
 // export Header module
