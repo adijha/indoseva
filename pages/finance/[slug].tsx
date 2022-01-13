@@ -40,16 +40,13 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 	])
 
 	return (
-		<div>
+		<div className="flex justify-center">
 			<article className="prose prose-green">
 				<div className="mb-4">
 					<Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
 				</div>
-
 				<h1>{frontMatter.title}</h1>
-
 				<p>{frontMatter.description}</p>
-
 				<MDXRemote components={components} {...source} />
 			</article>
 		</div>
