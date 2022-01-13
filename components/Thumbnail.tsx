@@ -11,12 +11,15 @@ type Props = {
 	src: string
 	// Thumbnail slug link
 	slug?: string
+	// Thumbnail class
+	className?: string
 }
 
-const Thumbnail: React.FC<Props> = ({ title, src, slug }: Props) => {
+const Thumbnail: React.FC<Props> = ({ title, src, slug, className }: Props) => {
 	// Add the Thumbnail cover image
 	const image = (
 		<Image
+			className={className}
 			height={720}
 			width={1280}
 			src={src}

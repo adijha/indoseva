@@ -2,7 +2,7 @@ import Thumbnail from '../../components/Thumbnail'
 import type { NextPage, GetStaticProps } from 'next'
 import { IPost } from '../../types/post'
 import Link from 'next/link'
-import { getAllPosts } from '../../utils/mdxUtils'
+import { getTechPosts } from '../../utils/mdxUtils'
 
 // props type
 type Props = {
@@ -99,7 +99,7 @@ export default Blog
 
 // get posts from serverside at build time
 export const getStaticProps: GetStaticProps = async () => {
-	const posts = getAllPosts([
+	const posts = getTechPosts([
 		'title',
 		'slug',
 		'date',
