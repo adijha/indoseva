@@ -94,31 +94,6 @@ const Blog: NextPage<Props> = ({ posts }: Props) => {
 		</section>
 	)
 }
-// <div>
-// 	<h1 className="text-4xl font-bold mb-4">Technical articles</h1>
-
-// 	<div className="space-y-12">
-// 		{posts.map((post) => (
-// 			<div key={post.slug}>
-// 				<div className="mb-4">
-// 					<Thumbnail
-// 						slug={post.slug}
-// 						title={post.title}
-// 						src={post.thumbnail}
-// 					/>
-// 				</div>
-
-// 				<h2 className="text-2xl font-bold mb-4">
-// 					<Link href={`/tech/${post.slug}`}>
-// 						<a>{post.title}</a>
-// 					</Link>
-// 				</h2>
-
-// 				<p>{post.description}</p>
-// 			</div>
-// 		))}
-// 	</div>
-// </div>
 
 export default Blog
 
@@ -130,6 +105,7 @@ export const getStaticProps: GetStaticProps = async () => {
 		'date',
 		'description',
 		'thumbnail',
+		'category',
 	])
 
 	// retunr the posts props

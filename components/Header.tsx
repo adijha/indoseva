@@ -61,6 +61,7 @@ const Header: React.FC = () => {
 					</button>
 				</div>
 			</div>
+			<hr />
 		</header>
 	)
 	// return (

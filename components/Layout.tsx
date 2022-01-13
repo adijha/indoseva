@@ -11,7 +11,6 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
 		<>
 			<div className="mx-auto px-4">
 				<Header />
-				<hr />
 				<main className="pt-4 pb-12">{children}</main>
 				<Footer />
 			</div>
