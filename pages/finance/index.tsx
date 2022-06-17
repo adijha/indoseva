@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import type { NextPage, GetStaticProps } from 'next'
 import { IPost } from '../../types/post'
 import Link from 'next/link'

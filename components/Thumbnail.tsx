@@ -1,7 +1,7 @@
 // import link artifacts
 import Link from 'next/link'
 // import image artifacts
-import Image from 'next/image'
+// import Image from 'next/image'
 
 // Thumbnail properties
 type Props = {
@@ -17,15 +17,16 @@ type Props = {
 
 const Thumbnail: React.FC<Props> = ({ title, src, slug, className }: Props) => {
 	// Add the Thumbnail cover image
-	const image = (
-		<Image
-			className={className}
-			height={720}
-			width={1280}
-			src={src}
-			alt={`Thumbnail cover image ${title}`}
-		/>
-	)
+	const image = <>1</>
+	// const image = (
+	// 	<Image
+	// 		className={className}
+	// 		height={720}
+	// 		width={1280}
+	// 		src={src}
+	// 		alt={`Thumbnail cover image ${title}`}
+	// 	/>
+	// )
 
 	// return the Thumbnail cover image slug
 	return (

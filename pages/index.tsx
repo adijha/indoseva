@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Home: NextPage = () => {
 	return (
@@ -28,13 +28,13 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 					<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-						<Image
+						{/* <Image
 							className="object-cover object-center rounded"
 							height={600}
 							width={700}
 							src="https://dummyimage.com/720x600"
 							alt="Thumbnail cover image"
-						/>
+						/> */}
 					</div>
 				</div>
 			</section>
@@ -59,13 +59,13 @@ const Home: NextPage = () => {
 					<div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<Image
+								{/* <Image
 									className="object-cover object-center h-full w-full"
 									height={503}
 									width={1203}
 									src="https://dummyimage.com/1203x503"
 									alt={`Thumbnail cover image`}
-								/>
+								/> */}
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
 								Shooting Stars
@@ -92,13 +92,13 @@ const Home: NextPage = () => {
 						</div>
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<Image
+								{/* <Image
 									className="object-cover object-center h-full w-full"
 									height={504}
 									width={1204}
 									src="https://dummyimage.com/1204x504"
 									alt={`Thumbnail cover image`}
-								/>
+								/> */}
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
 								The Catalyzer
@@ -125,13 +125,13 @@ const Home: NextPage = () => {
 						</div>
 						<div className="p-4 md:w-1/3 sm:mb-0 mb-6">
 							<div className="rounded-lg h-64 overflow-hidden">
-								<Image
+								{/* <Image
 									className="object-cover object-center h-full w-full"
 									height={505}
 									width={1205}
 									src="https://dummyimage.com/1205x505"
 									alt={`Thumbnail cover image`}
-								/>
+								/> */}
 							</div>
 							<h2 className="text-xl font-medium title-font text-gray-900 mt-5">
 								The 400 Blows
